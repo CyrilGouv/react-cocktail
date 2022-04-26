@@ -1,8 +1,13 @@
-import React from 'react'
+import Title from '../components/Title'
+
 
 const IndexPage = () => {
   return (
-    <div>Home</div>
+    <section className='home'>
+      <div className="container">
+        <Title text="Our Cocktails" />
+      </div>
+    </section>
   )
 }
 

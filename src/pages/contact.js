@@ -1,8 +1,15 @@
+import Title from "../components/Title"
 
+import '../styles/Contact.css'
 
 const ContactPage = () => {
   return (
-    <div>contact</div>
+    <section className="contact">
+      <div className="container">
+        <Title text="Contact Us" />
+        <a className="contact__link" href="https://cyrilgouv.com" target="_blank" rel="noopener noreferrer">hello@cyrilgouv.com</a>
+      </div>
+    </section>
   )
 }
 

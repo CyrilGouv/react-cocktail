@@ -1,0 +1,10 @@
+.contact {
+    text-align: center;
+}
+
+.contact__link {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    color: var(--yellow);
+}

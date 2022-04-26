@@ -2,7 +2,7 @@
 
 const CocktailPage = () => {
   return (
-    <div>cocktail</div>
+    <section>cocktail</section>
   )
 }
 

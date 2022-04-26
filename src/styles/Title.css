@@ -1,0 +1,7 @@
+.title {
+    font-family: var(--titleFont);
+    font-size: 8vw;
+    text-align: center;
+    color: var(--purple);
+    margin: 0;
+}
