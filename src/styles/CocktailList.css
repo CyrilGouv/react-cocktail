@@ -1,0 +1,16 @@
+.cocktailList {
+    padding-top: 5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cocktailList__nomatch {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.cocktailList__wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}

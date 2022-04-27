@@ -1,4 +1,5 @@
 import Title from '../components/Title'
+import CocktailList from '../components/CocktailList'
 
 
 const IndexPage = () => {
@@ -6,6 +7,8 @@ const IndexPage = () => {
     <section className='home'>
       <div className="container">
         <Title text="Our Cocktails" />
+
+        <CocktailList />
       </div>
     </section>
   )
