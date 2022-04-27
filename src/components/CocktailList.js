@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { BiSearchAlt2 } from 'react-icons/bi'
 import { API_URL } from "../constants"
 import CocktailItem from './CocktailItem'
 
@@ -12,7 +13,7 @@ const CocktailList = () => {
 
     useEffect(() => {
         callAPI()
-    }, [])
+    }, [search])
 
     const callAPI = async () => {
         
@@ -48,7 +49,14 @@ const CocktailList = () => {
   return (
     <div className="cocktailList">
         { drinks.length === 0 && <p className="cocktailList__nomatch">Sorry, No Cocktails Matched :(</p> }
-    
+
+        <form className="cocktailList__form">
+            <label htmlFor="search">
+                <BiSearchAlt2 />
+                <input onChange={ (e) => setSearch(e.target.value) } type="text" name="search" autoComplete="off" placeholder="Search for your favorite drink" value={ search } />
+            </label>
+        </form>
+
         <div className="cocktailList__wrapper">
             { drinks.map((drink, idx) => {
                 return <CocktailItem key={ idx } { ...drink } />
