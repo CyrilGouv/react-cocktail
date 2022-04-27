@@ -7,7 +7,6 @@ import '../styles/CocktailList.css'
 
 
 const CocktailList = () => {
-
     const [search, setSearch] = useState('')
     const [drinks, setDrinks] = useState([])
 
@@ -35,7 +34,7 @@ const CocktailList = () => {
         
                     return newDrink
                 })
-        
+                
                 setDrinks(cocktails)
             } else {
                 setDrinks([])
